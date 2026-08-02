@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+p {
+    font-size: 16px;
+    margin: 0 0 0.3em 0;
+}
+
+button {
+    margin: 0;
+}
+
+.test {
+    color: blue;
+    display: flex;
+    flex-direction: column;
+}
+
+div.main { /*this is the main body of the page*/
+    margin: 7px 7px 7px 7px;
+    border: 4px double #443300;
+    border-radius: 4px;
+    padding: 18px;
+    /*min-height: calc(50vh - 58px);*/
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+div.footer { /*this is the lower section/footer*/
+    width: 90vw;
+    margin: 0;
+    border: 5px ridge #77aaff;
+    border-radius: 11px;
+    padding: 18px;
+    background-color: #89d0d6;
+    min-height: 50px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.footerLink {
+    color: #333350;
+    &:hover {
+        color: #995A5A; /*B16F78 old color*/
+    }
+}
