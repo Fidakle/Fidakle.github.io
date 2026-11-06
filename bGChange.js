@@ -1,4 +1,4 @@
-function color(element) {
+function color(elements) {
     var red = rC();
     var green = rC();
     var blue = rC();
@@ -13,8 +13,8 @@ function color(element) {
         darkBlue = blue + 100;
     }
     
-    element.style.backgroundColor = "rgb("+red+","+green+","+blue+")";
-    element.style.color = "rgb("+darkRed+","+darkGreen+","+darkBlue+")";
+    elements.forEach((element) => element.style.backgroundColor = "rgb("+red+","+green+","+blue+")");
+    elements.forEach((element) => element.style.color = "rgb("+darkRed+","+darkGreen+","+darkBlue+")");
 }
 
 function rC() {

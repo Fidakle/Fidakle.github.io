@@ -2,7 +2,11 @@ body {
     margin: 0;
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
+    overflow-y: scroll; /*These overflows let the footer scroll up, but keep*/
+    overflow-x: hidden; /*the sides hidden (which is part of the style)*/
+    color: blue;
+    display: flex;
+    flex-direction: column;
 }
 
 p {
@@ -10,20 +14,19 @@ p {
     margin: 0 0 0.3em 0;
 }
 
-.test {
-    color: blue;
-    display: flex;
-    flex-direction: column;
-}
-
 div.main { /*this is the main body of the page*/
     margin: 7px 7px 7px 7px;
     border: 4px double #443300;
     border-radius: 4px;
     padding: 18px;
-    /*min-height: calc(50vh - 58px);*/
     flex-grow: 1;
     flex-shrink: 0;
+    height: calc(100vh - 70px); /*70px is the outside (border+margin) of the box*/
+    overflow-x: scroll;         /*plus a little extra, to make the top of the*/
+                                /*footer visible.*/
+    code {
+        font-size: 0.84em;
+    }
 }
 
 div.footer { /*this is the lower section/footer*/
@@ -37,9 +40,31 @@ div.footer { /*this is the lower section/footer*/
     flex-grow: 0;
     flex-shrink: 0;
 }
+footer {
+    display: flex;
+    > * {
+        flex-grow: 1;
+    }
+}
 .footerLink {
     color: #333350;
     &:hover {
         color: #995A5A; /*B16F78 old color*/
+    }
+}
+
+article {
+    height: 200px;
+    border: 6px red inset;
+    padding: 8px;
+    p {
+        color: #000033;
+    }
+}
+
+.internalLink {
+    color: #306066;
+    &:hover {
+        color: #8866ff;
     }
 }

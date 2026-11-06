@@ -9,19 +9,23 @@
 
 </head>
 
-<body class="test" id="background" style="background-color:powderblue;">
+<body id="background" style="background-color:powderblue;">
     
     <div class="main"> <!-- the main body of this page -->
         <p>
-            Hello World!
-            <button id="testButton" onClick="color(background)">Test</button>
+            Press the <code>Test</code> button for a fun change.
+            <button id="testButton" onClick="color([background, footer])">Test</button>
         </p>
+        <article><p>
+            Check out <a class="internalLink" href="minecraft/docs/landing.html">my new project</a>! It's a documentation of the Minecraft source code. Thanks to <a href="https://mcsrc.dev/">mcsrc.dev</a> for helping with accessing the code.
+        </p></article>
     </div>
     
-    <div class="footer"> <!-- the bottom section -->
-        <p>
-            <a class="footerLink" href="mozilla-tutorial/index.html">Go to other things</a>
-        </p>
+    <div class="footer" id="footer"> <!-- the bottom section -->
+        <footer>
+            <p> <a class="footerLink, internalLink" href="minecraft/docs/landing.html">Fidakle's Minecraft Documentation</a> </p>
+            <p> <a class="footerLink" href="mozilla-tutorial/index.html">Go to other things</a> </p>
+        </footer>
     </div>
 
 </body>

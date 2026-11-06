@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    color: 
+    
+}
+
+div.header {
+    border-bottom: 4px solid #446344;
+}
+div.headerTitle {
+    margin: 0px;
+    padding: 4px;
+    display: flex;
+    flex-grow: 1;
+    align-content: center;
+    font-family: "Georgia", serif;
+}
+.headerLogo {
+    flex-grow: 0;
+    height: 30px;
+    width: 30px;
+    align-self: center;
+    margin-right: 4px;
+}
+
+div.corps {
+    padding: 20px;
+    font: 12px "Helvetica Neue Sans", sans-serif;
+}
+div.corps a {
+
+}
